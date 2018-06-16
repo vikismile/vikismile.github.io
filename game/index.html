@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = stylesheet type = "text/css" href = "styles/style.css">
+        <title>Trick or Treat</title>
+        <link rel="icon" href="./media/images/pumpkin.png" type="image/x-icon">
+    </head>
+    <body>
+      <div id='canvass'><canvas id = "canvas" class = "canvas"></canvas></div>
+        <canvas id = "canvas" class = "canvas"></canvas>
+        <div id = "container" class = "container">
+            <div id="registrForm" class="registrForm">
+                <h1>Hello!</h1>
+                <p>Enter your name here:</p>
+                <input type='text' name='registrName' class='registrName' id="registrName" autofocus required placeholder='Bob'>
+                <button type='button' class='playNowBtn' id='playNowBtn' value='play'>Play now!</button>
+            </div>
+
+            <div class ="playerIcon isHidden" id = "playerIcon"></div>
+            <div class='playerScore' id='playerScore'><p id='playerScoreCur'>100</p><p>/100</p></div>
+            <div class='rivalScore' id='rivalScore'><p id='rivalScoreCur'>100</p><p>/100</p></div>
+
+            <div id="spell" class="spell isHidden">
+                <div id='rules' class='rules'></div>
+                  <p>Choose the spell you will use:</p>
+                  <div id = 'spellImg' class = 'spellImg'>
+                    <img id='mathSpellIcon' width="150px" src="media/images/spells/ghost.png">
+                    <img id='audioSpellIcon' width="150px" src="media/images/spells/lollipop.png">
+                    <img id='langSpellIcon' width="150px" src="media/images/spells/hat.png">
+                    
+                  </div>
+            </div>
+
+            <div id='mathSpell' class='mathSpell isHidden'>
+              <h1>Just solve it!</h1>
+              <div id='mathTask' class = 'mathTask'></div>
+              <button id="checkBtn">Check</button>
+            </div>
+
+            <div id='audioSpell' class='audioSpell isHidden'>
+                <h1>Just write down what you hear<br> without grammar mistakes</h1>
+                <div id='audioTask' class = 'audioTask'></div>
+                <button id="listenBtn">Listen</button>
+                <button id="checkAudioBtn">Check</button>
+              </div>
+
+              <div id='langSpell' class='langSpell isHidden'>
+                <h1>Just translate this word into russian</h1>
+                <div id='langTask' class = 'langTask'></div>
+                <button id="checkLangBtn">Check</button>
+              </div>
+
+
+            <div id='youWin' class='youWin isHidden'>
+              <h1>Correct!</h1>
+            </div>
+            <div id='youLose' class='youLose isHidden'>
+                <h1>Incorrect!</h1>
+            </div>
+            <div id='rivalAttack' class='rivalAttack isHidden'>
+                <h1>Rival attack!</h1>
+            </div>
+            <div id='youWinMonster' class='youWinMonster isHidden'>
+                <h1>You win this monster!</h1>
+                <button id='scoreboardBtn' class='scoreboardBtn'>Scoreboard</button>
+                <button id='continueBtn' class='continueBtn'>Continue</button>
+            </div>
+            <div id='monsterWin' class='monsterWin isHidden'>
+                <h1>Monster win!</h1>
+                <button id='continueBtnn' class='continueBtn'>Continue</button>
+            </div>
+
+            <div class="scoreboard isHidden" id="scoreboard">
+                <h2>Highscore table</h2>
+                <table id='highscoreTable'>
+                  <tr><td>#</td><td>Player</td><td>Defeated monsters</td></tr>
+                </table>
+                <button id='okBtn' class='okBtn'>Ok</button>
+            </div>
+<script src = "dist/bundle.js"></script>
+    </body>
+</html>

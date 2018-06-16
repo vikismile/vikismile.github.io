@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'mrsmonster';
+    src: url(../media/fonts/mrs_monster/mrsmonsterboldout.ttf)
+}
+
+@font-face {
+    font-family: 'mrsmonsterp';
+    src: url(../media/fonts/mrs_monster/mrsmonsterexpand.ttf)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'mrsmonsterp', Arial, Helvetica, sans-serif;
+    background-image: url(../media/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.canvas{
+    background-image: url(../media/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.registrForm{
+    text-align: center;
+    width: 300px;
+    height: 240px;
+    background-color: rgba(170,100,200,0.9);
+    border-radius: 20px;
+    font-family: 'mrsmonsterp';
+    margin: 150px auto;
+    position: absolute;
+}
+
+.registrForm input{
+    width: 65%;
+    padding: 8px 10px;
+    display: inline-block;
+    border: 2px solid rgb(44, 0, 41);
+    border-radius: 5px;
+}
+
+.playNowBtn, .scoreboardBtn, .continueBtn, .okBtn, .listenBtn{
+    margin: 30px auto 20px;
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-family: 'mrsmonsterp';
+    font-size: 18px;
+    border: 1px solid rgb(63, 0, 55);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.continueBtn, .okBtn{
+  margin: 5 auto;
+}
+
+.playNowBtn:hover, .scoreboardBtn:hover, .continueBtn:hover, .okBtn:hover, .listenBtn:hover{
+  border: 2px solid rgb(63, 0, 55);
+}
+
+.playerIcon{
+  width: 106px;
+  height: 193px;
+  background-image: url(../media/images/player.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 38% 0 0 -40%;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.playerScore, .rivalScore{
+  background-color: rgba(170,100,200,0.9);
+  width: 70px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+.rivalScore{
+  margin: 5% 45%;
+}
+
+.playerScore{
+  margin: 5% -45%;
+}
+
+.spell{
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(170,100,200,0.9);
+    border-radius: 20px;
+    font-family: 'mrsmonsterp';
+    margin: 30px auto;
+    position: absolute;
+    line-height: 30px;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.spell p{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.spellImg{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.spellImg img{
+    display: block;
+    transition: width height margin-left 100ms ease-in-out;
+    margin-left: 20px;
+}
+
+.spellImg img:hover{
+    width: 160px;
+    height: 170px;
+    margin-left: 10px;
+}
+
+.mathSpell, .audioSpell, .langSpell{
+  position: absolute;
+  background-color: rgb(197, 153, 216);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.mathTask{
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.mathTask input{
+  width: 30px;
+  padding: 8px 10px;
+  display: inline-block;
+  border: 2px solid rgb(44, 0, 41);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.audioSpell input{
+  width: 120px;
+  padding: 8px 10px;
+  border: 2px solid rgb(44, 0, 41);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.mathSpell button , .audioSpell button, .langSpell button{
+  margin: 10px auto;
+  display: block;
+  width: 130px;
+  height: 40px;
+  font-family: 'mrsmonsterp';
+  font-size: 18px;
+  border: 1px solid rgb(63, 0, 55);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mathSpell button:hover, .audioSpell button:hover, .langSpell button:hover{
+  border: 2px solid rgb(63, 0, 55);
+}
+
+.youWin, .youLose, .rivalAttack, .youWinMonster, .monsterWin{
+  width: 600px;
+  height: 400px;
+  background-color: rgba(170,100,200);
+  border-radius: 20px;
+  font-family: 'mrsmonsterp';
+  margin: 150px auto;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.youWinMonster, .monsterWin{
+  width: 370px;
+  height: 300px;
+}
+
+.scoreboard{
+  text-align: center;
+  width: 380px;
+  height: 460px;
+  background-color: rgb(170,100,200);
+  border-radius: 20px;
+  margin: 90px auto;
+  position: absolute;
+}
+
+td {
+  vertical-align: middle;
+  text-align: left;
+  border: 1px solid rgb(81, 61, 86);
+  }
+
+.opacity{
+    opacity: 1;
+}
+
+.isHidden{
+    visibility: hidden;
+}
