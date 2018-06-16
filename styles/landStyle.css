@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'mrsmonster';
+    src: url(../game/media/fonts/mrs_monster/mrsmonsterboldout.ttf)
+}
+
+@font-face {
+    font-family: 'mrsmonsteracad';
+    src: url(../game/media/fonts/mrs_monster/mrsmonsterexpand.ttf)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(0, 4, 11);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    z-index: 10;
+     padding: 5px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 67%;
+}
+
+a{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border 0.4s ease-in-out;
+}
+
+.navigation a:hover{
+    border-color: #000;
+}
+
+.navigation{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home{
+    background-image: url(../images/hall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h3{
+    margin-top: 0;
+}
+
+.home img{
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.home button{
+    background-color: rgb(233, 140, 70);
+    border: 1px solid rgb(233, 140, 70);
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.home button:hover{
+    background-color: rgb(230, 103, 19);;
+}
+
+.homeImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 170px;
+
+}
+
+.homeImage img{
+    margin-top: 0;
+}
+
+.playerImg{
+    height: 340px;
+}
+.monsterImg{
+    height: 430px;
+}
+
+.screenshots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 219, 208);
+    padding-top: 90px;
+}
+.screenshots h2{
+    margin-bottom: 5px;
+}
+.screenshots p{
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+.screenshotImg{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.screenshotImg img{
+    margin-bottom: 20px;
+}
+
+.developer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(236, 236, 224);
+    padding-bottom: 50px;
+}
+
+.developer h2{
+    margin-top: 90px;
+}
+
+.devImg{
+    width: 200px;
+}
+
+.fa:before{
+    font-size: 40px;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(0, 4, 11);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
