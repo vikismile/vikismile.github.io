@@ -23,9 +23,9 @@ export function generateMonster () {
              imageObj4.src = "media/images/monsters/head-" +random()+ ".png";
              imageObj4.onload = function() {
                 ctx.drawImage(imageObj4, window.innerWidth-210, window.innerHeight-360, 136,131);
-                const img = canvas.toDataURL("image/png");
+                /*const img = canvas.toDataURL("image/png");
                 ctx.clearRect(0, 0, canvas.width, canvas.height);             
-                document.write('<img crossOrigin="anonymous" src="' + img + '" width="358" height="526"/>');
+                document.write('<img crossOrigin="anonymous" src="' + img + '" width="358" height="526"/>');*/
              }
           }
        }

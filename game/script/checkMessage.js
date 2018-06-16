@@ -18,7 +18,7 @@ export function checkMessage(answer, spellName, taskName){
         youWin.classList.remove('isHidden');
         setTimeout(function f(){
             const rivalScore = document.getElementById('rivalScoreCur');
-            rivalScore.innerHTML = Number(rivalScore.innerHTML) - 50;
+            rivalScore.innerHTML = Number(rivalScore.innerHTML) - 25;
             if(Number(rivalScore.innerHTML)==0){
                 if(profilesArray[i].monsterName){
                     if(cont>0){
